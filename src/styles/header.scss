@@ -26,14 +26,8 @@
 
     &__banner {
         max-height: $header-min-height;
+        aspect-ratio: 1000 / 288;
 
-        display: flex;
-        justify-content: center;
-
-        img {
-            height: 100%;
-            aspect-ratio: 1000 / 288;
-        }
     }
 }
 
