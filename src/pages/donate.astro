@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import pageContent from '../layouts/pageContent.astro';
+import PageContent from '../layouts/PageContent.astro';
 ---
 <Layout title="Donate">
-    <pageContent title="Donate" description="VANNI AID FOUNDATION" pageName="donate">
+    <PageContent title="Donate" description="VANNI AID FOUNDATION" pageName="donate">
         <p>
             Donations up to $10,000 are accepted by credit card or via PayPal.
         </p>
@@ -46,7 +46,7 @@ import pageContent from '../layouts/pageContent.astro';
                 Charitable contributions are tax deductible under Provision <a href="http://www.law.cornell.edu/uscode/text/26/170">26 U.S.C. § 170</a>.
             </em>
         </p>
-    </pageContent>
+    </PageContent>
     <script>
         document.querySelector('.donate').href = `${document.querySelector('.donate').href}?token=eDB38adzpiZ7moMNzfT-cflaBFhHqYa7y7QSU3ZeBC0MYeDQNRLIs93PLnKSqwWPF1ZzaI14aJ87aAty`
     </script>
