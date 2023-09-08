@@ -3,11 +3,14 @@
 .header {
     position: relative;
     margin-inline: auto;
+    padding-inline: $header-padding;
 
     min-height: $header-min-height;
     width: $site-items-width;
     max-width: 100%;
     
+    background-color: $site-accent;
+
     display: flex; // grid;
     // grid-template-columns: 1fr 1fr;
     // flex-direction: column;
@@ -36,12 +39,10 @@
 
     position: relative;
     box-sizing: border-box;
-    padding-inline: 2rem;
+    padding-inline: $header-padding;
 
     min-height: 40px;
     width: 100%;
-
-    background-color: $site-accent;
 
     display: flex;
     justify-content: flex-start;
