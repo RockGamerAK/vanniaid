@@ -1,17 +1,12 @@
 ---
 let deployNetlify = "https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-quickstart"
 import Layout from '../layouts/Layout.astro';
+import pageContent from '../layouts/pageContent.astro';
 import '../styles/index.scss';
 ---
 
 <Layout title="">
-	<main id="content">
-    <h1 class="page-title">Home</h1>
-    <p class="page-description">
-      <strong>
-        Vanni Aid Foundation works to support the livelihood of the children of Vavuniya, Sri Lanka
-      </strong>
-    </p>
+  <pageContent title="Home" description="Vanni Aid Foundation works to support the livelihood of the children of Vavuniya, Sri Lanka" pageName="contact">
     <section class="content">
       <p>
         The disruption in education during the civil war has left the majority of middle and high school students with a very poor knowledge of English. A good command of the English language is essential for the future of these children.
@@ -39,5 +34,5 @@ import '../styles/index.scss';
         </em>
       </p>
     </section>
-	</main>
+  </pageContent>
 </Layout>
