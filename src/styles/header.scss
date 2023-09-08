@@ -25,7 +25,9 @@
     }
 
     &__banner {
-        width: 100%;
+        max-height: $header-min-height;
+        object-fit: contain;
+        object-position: center;
 
         display: flex;
         justify-content: center;
