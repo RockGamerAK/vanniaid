@@ -1,8 +1,12 @@
 ---
 const { pageName, title, description } = Astro.props
-import '../styles/*'
+import '../styles/'
 import '../styles/globals.scss'
 import '../styles/globalContent.scss'
+
+if (pageName === 'index') import '../styles/index.scss'
+if (pageName === 'contact') import '../styles/contact.scss'
+if (pageName === 'donate') import '../styles/donate.scss'
 
 var theTitle = `<h1 class="page-title">${title}</h1>`
 while(theTitle.includes('<>')) theTitle.replace('<>', '')
