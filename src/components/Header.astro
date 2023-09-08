@@ -3,14 +3,14 @@ import '../styles/header.scss';
 const { image, alt } = Astro.props
 ---
 <header class="header">
+    <div class="header__banner">
+        <img src={image} alt={alt} />
+    </div>
     <nav class="nav">
         <a href="/" class="nav__btn">Home</a>
         <a href="/contact" class="nav__btn">Contact</a>
         <a href="/donate" class="nav__btn">Donate</a>
         <!-- <div class="header__gradient"></div> -->
     </nav>
-    <div class="header__banner">
-        <img src={image} alt={alt} />
-    </div>
     <div class="header__gradient"></div>
 </header>
