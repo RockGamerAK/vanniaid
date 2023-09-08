@@ -10,7 +10,6 @@ export interface Props {
 
 const { title } = Astro.props as Props;
 var siteName = 'Vanni Aid'
-var sPosUrl = siteName.split(' ').join('').toLowerCase()
 var dTitle = `${title} | ${siteName}`
 if (dTitle.startsWith(' | ')) {
 	dTitle = dTitle.replace(' | ', '')
@@ -45,10 +44,11 @@ var headerBannerImage = `${siteName} Banner Image`
 			}
 		</script>
 		<script>
+			var sPosUrl = {siteName}.split(' ').join('').toLowerCase()
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
-				if (aHref.includes({sPosUrl}) === false) {
+				if (aHref.includes(sPosUrl) === false) {
 					a.target = "_blank"
 				}
 			})
