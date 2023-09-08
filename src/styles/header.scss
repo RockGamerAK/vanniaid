@@ -8,8 +8,8 @@
     width: $site-items-width;
     max-width: 100%;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex; // grid;
+    // grid-template-columns: 1fr 1fr;
     // flex-direction: column;
 
     &__gradient {
@@ -38,9 +38,12 @@
 }
 
 .nav {
+    flex: 1;
+
     position: relative;
     box-sizing: border-box;
     padding-inline: 2rem;
+
     min-height: 40px;
     width: 100%;
 
