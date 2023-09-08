@@ -1,0 +1,18 @@
+---
+const { pageName, title, description } = Astro.props
+// import `../styles/${pageName}.scss`
+
+let theTitle = `<h1 class="page-title">${title}</h1>`
+while(theTitle.includes('<>')) theTitle.replace('<>', '')
+while (theTitle.includes('</>')) theTitle.replace('</>', '')
+let theDesc `<p class="page-description"><strong>${description}</strong></p>`
+while(theDesc.includes('<>')) theDesc.replace('<>', '')
+while (theDesc.includes('</>')) theDesc.replace('</>', '')
+---
+<main id="content">
+    {theTitle}
+    {theDesc}
+    <section class="content">
+        <slot />
+    </section>
+</main>
