@@ -12,12 +12,11 @@
     background-color: $site-accent;
 
     display: flex; // grid;
-    // grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     // flex-direction: column;
+    // grid-template-columns: 1fr 1fr;
 
     &__gradient {
-        flex: 1;
-
         position: absolute;
         top: 100%;
 
@@ -35,8 +34,6 @@
 }
 
 .nav {
-    flex: 1;
-
     position: relative;
     box-sizing: border-box;
     padding-inline: $header-padding;
