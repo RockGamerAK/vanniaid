@@ -1,5 +1,6 @@
 ---
 const { pageName, title, description } = Astro.props
+import '../styles'
 import '../styles/globals.scss'
 import '../styles/globalContent.scss'
 
@@ -9,8 +10,6 @@ while (theTitle.includes('</>')) theTitle.replace('</>', '')
 let = theDesc `<p class="page-description"><strong>${description}</strong></p>`
 while(theDesc.includes('<>')) theDesc.replace('<>', '')
 while (theDesc.includes('</>')) theDesc.replace('</>', '')
-
-import `../styles/${pageName}.scss`
 ---
 <main id="content">
     {theTitle}
