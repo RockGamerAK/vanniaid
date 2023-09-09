@@ -46,7 +46,9 @@ var headerBannerImage = `${siteName} Banner Image`
 			}
 		</script>
 		<script>
-			var sPosUrl = {siteName}.split(' ').join('').toLowerCase()
+			var sTit = document.title
+			if (sTit.includes(' | ')) sTit = sTit.split(' | ')
+			var sPosUrl = sTit.split(' ').join('').toLowerCase()
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
