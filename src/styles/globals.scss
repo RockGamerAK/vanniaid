@@ -40,7 +40,7 @@ main {
 }
 
 .page-title {
-  margin-block-start: 0;
+  margin-block: 0;
   padding-block-end: $page-title-padding-block-end;
 
   color: $site-accent;
@@ -49,6 +49,10 @@ main {
   font-weight: $page-title-font-weight;
 
   text-transform: uppercase;
+}
+
+.page-description {
+  margin-block: 0;
 }
 
 .page-description, .content p {
