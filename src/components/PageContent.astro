@@ -15,9 +15,6 @@ if (pageName === 'contact') import '../styles/contact.scss'
 if (pageName === 'donate') import '../styles/donate.scss'
 ---
 <main id="content">
-    {title}<br>
-    {description}<br>
-    <slot />
     <h1 class="page-title" set:html={title} />
     <p class="page-description" set:html={description} />
     <section class="content">
