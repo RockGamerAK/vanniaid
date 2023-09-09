@@ -1,5 +1,4 @@
 ---
-const { pageName, title, description } = Astro.props
 
 // const pageNames = ['index', 'contact', 'donate']
 // import '../styles/index.scss'
@@ -9,6 +8,8 @@ const { pageName, title, description } = Astro.props
 import '../styles/globals.scss'
 import '../styles/globalContent.scss'
 
+const { pageName, title, description } = Astro.props
+
 if (pageName === 'index') import '../styles/index.scss'
 if (pageName === 'contact') import '../styles/contact.scss'
 if (pageName === 'donate') import '../styles/donate.scss'
@@ -16,7 +17,6 @@ if (pageName === 'donate') import '../styles/donate.scss'
 <main id="content">
     <h1 class="page-title" set:html={title} />
     <p class="page-description" set:html={description} />
-    {theDesc}
     <section class="content">
         <slot />
     </section>
