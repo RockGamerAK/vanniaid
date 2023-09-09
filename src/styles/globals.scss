@@ -19,7 +19,7 @@ html {
 body {
   margin: $site-main-margin;
 
-  min-height: calc(100dvh - ($site-main-margin*2) - $body-sides-val);
+  min-height: calc(100dvh - ($site-main-margin*2));
 
   display: flex;
   flex-direction: column;
