@@ -1,6 +1,9 @@
 ---
 const { pageName, title, description } = Astro.props
-import '../styles/'
+const pageNames = ['indes', 'contact', 'donate']
+pageNames.forEach(function(n, i) {
+    import `../styles/${n}.scss`
+})
 import '../styles/globals.scss'
 import '../styles/globalContent.scss'
 
