@@ -3,50 +3,56 @@ import Layout from '../layouts/Layout.astro';
 import PageContent from '../components/PageContent.astro';
 ---
 <Layout title="Donate">
-    <PageContent title="Donate" description="VANNI AID FOUNDATION" descriptionTag="strong" pageName="donate">
-        <p>
-            Donations up to $10,000 are accepted by credit card or via PayPal.
+    <main id="content">
+        <h1 class="page-title">Donate</h1>
+        <p class="page-description">
+            <strong>VANNI AID FOUNDATION</strong>
         </p>
-        <p>
-            <a href="https://www.paypal.com/donate" class="donate large">
-                <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
-            </a>
-        </p>
-        <p>
-            Checks for any amount are very welcome!<br>
-            Include your address and we will send you a receipt.
-        </p>
-        <p>
-            Please make checks payable to:
-        </p>
-        <p>
-            VANNI AID FOUNDATION<br>
-            c/o Josephine & Wiji Ratnathicam<br>
-            16 Amalfi Drive<br>
-            Cortlandt Manor, NY 10567<br>
-        </p>
-        <p>
-            Contact us with any questions at: <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a> or <a href="tel:9147371358">(914) 737-1358</a>
-        </p>
-        <p>
-            <img src="/Familytofeed1-e1338863969592.jpg" alt="Family to feed" />
-        </p>
-        <p>
-            <em>Thank you for caring enough to give!</em>
-        </p>
-        <p>
-            VANNI AID FOUNDATION<br>
-            <a href="tel:9147371358">(914) 737-1358</a><br>
-            <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a><br>
-            www.vanniaid.org
-        </p>
-        <p>
-            <em>
-                Vanni Aid Foundation is a <a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501(c)(3)-Organizations">501(c)3</a> tax-exempt, nonprofit organization.<br>
-                Charitable contributions are tax deductible under Provision <a href="http://www.law.cornell.edu/uscode/text/26/170">26 U.S.C. § 170</a>.
-            </em>
-        </p>
-    </PageContent>
+        <section class="content">
+            <p>
+                Donations up to $10,000 are accepted by credit card or via PayPal.
+            </p>
+            <p>
+                <a href="https://www.paypal.com/donate" class="donate large">
+                    <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
+                </a>
+            </p>
+            <p>
+                Checks for any amount are very welcome!<br>
+                Include your address and we will send you a receipt.
+            </p>
+            <p>
+                Please make checks payable to:
+            </p>
+            <p>
+                VANNI AID FOUNDATION<br>
+                c/o Josephine & Wiji Ratnathicam<br>
+                16 Amalfi Drive<br>
+                Cortlandt Manor, NY 10567<br>
+            </p>
+            <p>
+                Contact us with any questions at: <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a> or <a href="tel:9147371358">(914) 737-1358</a>
+            </p>
+            <p>
+                <img src="/Familytofeed1-e1338863969592.jpg" alt="Family to feed" />
+            </p>
+            <p>
+                <em>Thank you for caring enough to give!</em>
+            </p>
+            <p>
+                VANNI AID FOUNDATION<br>
+                <a href="tel:9147371358">(914) 737-1358</a><br>
+                <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a><br>
+                www.vanniaid.org
+            </p>
+            <p>
+                <em>
+                    Vanni Aid Foundation is a <a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501(c)(3)-Organizations">501(c)3</a> tax-exempt, nonprofit organization.<br>
+                    Charitable contributions are tax deductible under Provision <a href="http://www.law.cornell.edu/uscode/text/26/170">26 U.S.C. § 170</a>.
+                </em>
+            </p>
+        </section>
+    </main>
     <script>
         document.querySelector('.donate').href = `${document.querySelector('.donate').href}?token=eDB38adzpiZ7moMNzfT-cflaBFhHqYa7y7QSU3ZeBC0MYeDQNRLIs93PLnKSqwWPF1ZzaI14aJ87aAty`
     </script>
