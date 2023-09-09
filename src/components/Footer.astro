@@ -1,9 +1,12 @@
 ---
 import '../styles/footer.scss';
-const { siteName } = Astro.props
+const { siteName, empowermentLink, designPersonLink } = Astro.props
+var { empowermentPeople, designPerson } = Astro.props
+if (!!empowermentLink) empowermentPeople = `<a href="${empowermentLink}"}>${empowermentPeople}</a>`
+if (!!designPersonLink) designPerson = `<a href="${designPersonLink}"}>${designPerson}</a>`
 let currentYear = new Date().getFullYear()
 
 ---
 <footer class="footer">
-    <span>© {currentYear} {siteName}</span> | <span>Design by Tina Wendon</span> | <span>Web empowerment by Concept Compass</span>
+    <span>© {currentYear} {siteName}</span> | <span>Design by {designPerson}</span> | <span>Web empowerment by {empowermentPeople}</span>
 </footer>
