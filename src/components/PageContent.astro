@@ -14,11 +14,9 @@ if (pageName === 'contact') import '../styles/contact.scss'
 if (pageName === 'donate') import '../styles/donate.scss'
 
 var theTitle = `<h1 class="page-title">${title}</h1>`
-while(theTitle.includes('<>')) theTitle.replace('<>', '')
-while (theTitle.includes('</>')) theTitle.replace('</>', '')
+while(theTitle === '<h1 class="page-title"></h1>') theTitle === ''
 var theDesc = `<p class="page-description"><strong>${description}</strong></p>`
-while(theDesc.includes('<>')) theDesc.replace('<>', '')
-while (theDesc.includes('</>')) theDesc.replace('</>', '')
+while(theDesc === '<p class="page-description"><strong></strong></p>') theDesc === ''
 ---
 <main id="content">
     {theTitle}

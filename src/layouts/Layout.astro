@@ -16,6 +16,8 @@ if (dTitle.startsWith(' | ')) {
 }
 
 var headerBannerImage = `${siteName} Banner Image`
+
+// need to add designPersonLink to footer
 ---
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@ var headerBannerImage = `${siteName} Banner Image`
 	<body>
 		<Header image="/assets/VanniAidBanner-May13.jpg" alt={headerBannerImage} />
 		<slot />
-		<Footer siteName={siteName} />
+		<Footer siteName={siteName} empowermentPeople="Graphics for Good" designPerson="Adarsh Kumar" empowermentLink="https://graphics-for-good.com" />
 		<script>
 			let pageName = location.pathname
 			let links = document.querySelectorAll('.nav__btn')
