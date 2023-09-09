@@ -8,5 +8,5 @@ let currentYear = new Date().getFullYear()
 
 ---
 <footer class="footer">
-    <span>© {currentYear} {siteName}</span> | <span>Design by {designPerson}</span> | <span>Web empowerment by {empowermentPeople}</span>
+    <span>© {currentYear} {siteName}</span> | <span>Design by <span set:html={designPerson}/></span> | <span>Web empowerment by <span set:html={empowermentPeople}/></span>
 </footer>
