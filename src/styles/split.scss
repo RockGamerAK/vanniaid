@@ -1,12 +1,12 @@
-/* remove the padding so images can take up the entire height */
+@import './variables.scss';
+
 .split-area {
-    padding-block: 0;
 }
   
 /* match the section padding for the text blocks for consistency */
 .split-area > :not(img) {
     padding-block: var(--section-padding-block);
-    padding-inline: var(--wrapper-padding-inline);
+    padding-inline: $main-padding;
 }
   
 @media (min-width: 600px) {
@@ -14,10 +14,10 @@
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
         grid-template-columns:
-            minmax(var(--wrapper-padding-inline), 1fr)
+            minmax($main-padding, 1fr)
             minmax(0, calc(var(--wrapper-max-width) / 2))
             minmax(0, calc(var(--wrapper-max-width) / 2))
-            minmax(var(--wrapper-padding-inline), 1fr);
+            minmax($main-padding, 1fr);
   
         /* for positioning the pseudo-elements to fill in the rest of the background*/
         position: relative;

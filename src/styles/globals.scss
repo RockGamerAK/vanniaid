@@ -32,7 +32,7 @@ main {
   margin-inline: auto;
   padding: $main-padding;
 
-  width: $site-items-width;
+  max-width: $site-items-width;
   max-width: 100%;
 
   background: $main-background;

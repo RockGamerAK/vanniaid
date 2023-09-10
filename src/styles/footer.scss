@@ -5,7 +5,7 @@
     padding: $footer-padding;
 
     max-width: 100%;
-    width: calc($site-items-width - 0.75rem*2);
+    width: calc(100% - 0.75rem*2);
 
     background-color: $main-color;
     color: $footer-color;
