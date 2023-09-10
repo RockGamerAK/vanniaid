@@ -1,6 +1,7 @@
 ---
 let deployNetlify = "https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-quickstart"
 import Layout from '../layouts/Layout.astro';
+import SplitArea from '../layouts/SplitArea.astro';
 import '../styles/index.scss';
 ---
 <Layout title="">
@@ -19,19 +20,22 @@ import '../styles/index.scss';
       <p>
         We have committed to the program through the end of the year and would like to continue to support it.  That said, the expense is significant, and we need your help to continue to fund this until the people in Vavuniya are better able to self-sustain.  It costs roughly $20 US to support one student for 10 weeks, so while the costs add up at scale, small donations can have significant impact.  
       </p>
-      <p>
-        Please contribute generously, as the future of these children is in your hands.
-      </p>
-      <p>
-        <a href="/donate" class="donate">
-          <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
-        </a>
-      </p>
-      <p>
-        <em>
-          Vanni Aid Foundation is a <a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501(c)(3)-Organizations">501(c)3</a> organization. Your contribution is tax deductible.
-        </em>
-      </p>
+      <SplitArea idName="donate">
+        <img />
+        <div>
+          <p>Please contribute generously, as the future of these children is in your hands.</p>
+          <p>
+            <a href="/donate" class="donate">
+              <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
+            </a>
+          </p>
+          <p>
+            <em>
+              Vanni Aid Foundation is a <a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501(c)(3)-Organizations">501(c)3</a> organization. Your contribution is tax deductible.
+            </em>
+          </p>
+        </div>
+      </SplitArea>
     </section>
   </main>
 </Layout>
