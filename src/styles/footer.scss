@@ -12,4 +12,11 @@
 
     text-align: center;
     font-size: $footer-font-size;
+
+    & a.dark {
+        color: orange;
+        &:visited {
+            color: yellow;
+        }
+    }
 }
