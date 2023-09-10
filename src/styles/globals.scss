@@ -32,8 +32,6 @@ main {
   margin-inline: auto;
   padding: $main-padding;
 
-  max-width: $site-items-width;
-
   background: $main-background;
   color: $main-color;
 }
@@ -61,6 +59,8 @@ main {
 
 .content {
   margin-block-start: $content-gap;
+
+  max-width: $site-items-width;
   display: flex;
   flex-direction: column;
   gap: $content-gap;
