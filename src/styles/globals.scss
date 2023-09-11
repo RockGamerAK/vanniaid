@@ -38,6 +38,7 @@ main {
 }
 
 .page-title {
+  margin-inline: auto;
   margin-block: 0;
   padding-block-end: $page-title-padding-block-end;
 
@@ -53,6 +54,7 @@ main {
 }
 
 .page-description {
+  margin-inline: auto;
   margin-block: 0;
   max-width: $site-items-width;
   text-align: center;
