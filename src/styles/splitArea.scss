@@ -2,9 +2,14 @@
 
 .split-area {
 }
-  
+
+.split-area > img {
+    width: 50%;
+}
+
 /* match the section padding for the text blocks for consistency */
 .split-area > :not(img) {
+    width: calc(50% - $main-padding*2);
     padding-block: var(--section-padding-block);
     padding-inline: $main-padding;
 }
