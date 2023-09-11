@@ -45,30 +45,26 @@
         grid-column: 3 / -1;
     }
   
-    /* make sure text doesn't touch the edge of the viewport 
-     and the content is vertically centered */
+    /* make sure text doesn't touch the edge of the viewport and the content is vertically centered */
     .split-area > :not(img) {
         display: grid;
         align-content: center;
         justify-items: start;
     }
   
-    /* if the non-image is first, place it in the second column
-    (first column is empty to emulate the .wrapper) */
+    /* if the non-image is first, place it in the second column (first column is empty to emulate the .wrapper) */
     .split-area > :not(img):first-child {
         padding-left: 0;
         grid-column: 2 / 3;
     }
   
-    /* if the non-image is last, place it in the third column
-       (fourth column is empty to emulate the .wrapper) */
+    /* if the non-image is last, place it in the third column (fourth column is empty to emulate the .wrapper) */
     .split-area > :not(img):last-child {
         padding-right: 0;
         grid-column: 3 / 4;
     }
   
-    /* at large screens, ensure the background color
-       goes to the edge of the page */
+    /* at large screens, ensure the background color goes to the edge of the page */
     .split-area > :not(img)::before {
         content: "";
         position: absolute;
@@ -85,4 +81,4 @@
     .split-area > :not(img):last-child::before {
         grid-column: 4 / 5;
     }
-  }
+}
