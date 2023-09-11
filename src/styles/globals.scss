@@ -42,6 +42,10 @@ main {
   gap: $main-gap;
 }
 
+img, image {
+  max-width: 100%;
+}
+
 .page-title {
   margin-inline: auto;
   margin-block: 0;
