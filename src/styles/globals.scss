@@ -59,6 +59,7 @@ main {
 }
 
 .content {
+  margin-inline: auto;
   margin-block-start: $content-gap;
 
   max-width: $site-items-width;
