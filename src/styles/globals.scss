@@ -72,7 +72,8 @@ main {
 .content {
   margin-inline: auto;
 
-  max-width: $site-items-width;
+  width: $site-items-width;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: $main-gap;
