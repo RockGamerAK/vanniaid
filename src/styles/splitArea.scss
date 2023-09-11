@@ -1,6 +1,8 @@
 @import './variables.scss';
 
 .split-area {
+    position: relative;
+    left: 0;
 }
   
 /* match the section padding for the text blocks for consistency */
