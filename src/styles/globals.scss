@@ -35,10 +35,6 @@ main {
 
   background: $main-background;
   color: $main-color;
-
-  display: flex;
-  flex-direction: column;
-  gap: $main-gap;
 }
 
 img, image {
@@ -47,7 +43,6 @@ img, image {
 
 .page-title {
   margin-inline: auto;
-  margin-block-end: 0;
 
   max-width: $site-items-width;
   color: $site-accent;
@@ -68,7 +63,7 @@ img, image {
 .page-description, .content p {
   margin-inline: auto;
 
-  width: $site-items-width;
+  min-width: $site-items-width;
   max-width: 100%;
 
   font-size: $content-font-size;
@@ -76,6 +71,7 @@ img, image {
 }
 
 .content {
+  margin-inline-start: $main-gap;
   display: flex;
   flex-direction: column;
   gap: $main-gap;
