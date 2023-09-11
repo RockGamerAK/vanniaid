@@ -13,6 +13,7 @@
 .split-area > :not(img) {
     padding-block: var(--section-padding-block);
     padding-inline: $main-padding;
+    gap: $main-gap;
 }
   
 @media (min-width: 600px) {
