@@ -41,6 +41,7 @@ main {
   margin-block: 0;
   padding-block-end: $page-title-padding-block-end;
 
+  max-width: $site-items-width;
   color: $site-accent;
 
   font-size: $page-title-font-size;
@@ -51,6 +52,7 @@ main {
 
 .page-description {
   margin-block: 0;
+  max-width: $site-items-width;
 }
 
 .page-description, .content p {
