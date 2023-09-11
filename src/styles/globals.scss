@@ -32,6 +32,7 @@ main {
   box-sizing: border-box;
   margin-inline: auto;
   padding: $main-padding;
+  padding-block-start: $main-gap;
 
   background: $main-background;
   color: $main-color;
