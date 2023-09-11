@@ -6,7 +6,7 @@
 }
 
 html {
-  background: $site-accent;
+  background: $color-accent;
   color: $site-color;
 
   font-family: var(--main-family);
@@ -33,7 +33,7 @@ main {
   margin-inline: auto;
   padding: $main-padding;
 
-  background: $main-background;
+  background: $bg-priimary;
   color: $main-color;
 }
 
@@ -45,7 +45,7 @@ img, image {
   margin-inline: auto;
 
   max-width: $site-items-width;
-  color: $site-accent;
+  color: $color-accent;
 
   font-size: $page-title-font-size;
   font-weight: $page-title-font-weight;
