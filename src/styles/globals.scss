@@ -37,10 +37,13 @@ main {
   color: $main-color;
 }
 
+main *+* {
+  margin-block-start: $content-gap;
+}
+
 .page-title {
   margin-inline: auto;
   margin-block: 0;
-  padding-block-end: $page-title-padding-block-end;
 
   max-width: $site-items-width;
   color: $site-accent;
@@ -67,7 +70,6 @@ main {
 
 .content {
   margin-inline: auto;
-  margin-block-start: $content-gap;
 
   max-width: $site-items-width;
   display: flex;
