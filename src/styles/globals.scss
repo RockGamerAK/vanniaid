@@ -64,21 +64,19 @@ img, image {
 .page-description {
   margin-inline: auto;
   margin-block: 0;
-  width: $site-items-width;
-  max-width: 100%;
 }
 
 .page-description, .content p {
+  width: $site-items-width;
+  max-width: 100%;
+
   font-size: $content-font-size;
   line-height: $content-line-height;
 }
 
 .content {
-  position: relative;
   margin-inline: auto;
 
-  width: $site-items-width;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: $main-gap;
