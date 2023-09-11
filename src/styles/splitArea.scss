@@ -6,6 +6,7 @@
 .split-area > * {
     box-sizing: border-box;
     width: 50dvw;
+    aspect-ratio: 4 / 3;
 }
 
 /* match the section padding for the text blocks for consistency */
