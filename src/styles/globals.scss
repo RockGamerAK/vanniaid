@@ -60,7 +60,8 @@ main {
 .page-description {
   margin-inline: auto;
   margin-block: 0;
-  max-width: $site-items-width;
+  width: $site-items-width;
+  max-width: 100%;
 }
 
 .page-description, .content p {
