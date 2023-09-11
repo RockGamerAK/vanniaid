@@ -35,10 +35,10 @@ main {
 
   background: $main-background;
   color: $main-color;
-}
 
-main *+* {
-  margin-block-start: $content-gap;
+  display: flex;
+  flex-direction: column;
+  gap: $main-gap;
 }
 
 .page-title {
@@ -60,7 +60,6 @@ main *+* {
   margin-inline: auto;
   margin-block: 0;
   max-width: $site-items-width;
-  // text-align: center;
 }
 
 .page-description, .content p {
@@ -74,7 +73,7 @@ main *+* {
   max-width: $site-items-width;
   display: flex;
   flex-direction: column;
-  gap: $content-gap;
+  gap: $main-gap;
 
   p {
     margin-block: 0;
