@@ -67,6 +67,8 @@ img, image {
 }
 
 .page-description, .content p {
+  margin-inline: auto;
+
   width: $site-items-width;
   max-width: 100%;
 
@@ -75,8 +77,6 @@ img, image {
 }
 
 .content {
-  margin-inline: auto;
-
   display: flex;
   flex-direction: column;
   gap: $main-gap;
