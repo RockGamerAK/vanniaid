@@ -63,7 +63,7 @@ img, image {
 .page-description, .content p {
   margin-inline: auto;
 
-  min-width: $site-items-width;
+  width: min($site-items-width, 100%);
   max-width: 100%;
 
   font-size: $content-font-size;

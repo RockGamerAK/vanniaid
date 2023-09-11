@@ -53,11 +53,8 @@
         justify-items: start;
     }
   
-    .split-area > :not(img) p {
-        max-width: 100%;
-    }
-        /* if the non-image is first, place it in the second column
-       (first column is empty to emulate the .wrapper) */
+    /* if the non-image is first, place it in the second column
+    (first column is empty to emulate the .wrapper) */
     .split-area > :not(img):first-child {
         padding-left: 0;
         grid-column: 2 / 3;
