@@ -71,7 +71,7 @@ img, image {
 }
 
 .content {
-  margin-inline-start: $main-gap;
+  margin-block-start: $main-gap;
   display: flex;
   flex-direction: column;
   gap: $main-gap;
