@@ -13,6 +13,7 @@
 .split-area > :not(img) {
     padding-block: var(--section-padding-block);
     padding-inline: $main-padding;
+    display: grid;
     gap: $main-gap;
 }
   
@@ -49,7 +50,6 @@
   
     /* make sure text doesn't touch the edge of the viewport and the content is vertically centered */
     .split-area > :not(img) {
-        display: grid;
         align-content: center;
         justify-items: start;
     }
