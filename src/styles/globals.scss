@@ -47,12 +47,15 @@ main {
   font-size: $page-title-font-size;
   font-weight: $page-title-font-weight;
 
+  text-align: center;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 .page-description {
   margin-block: 0;
   max-width: $site-items-width;
+  text-align: center;
 }
 
 .page-description, .content p {
