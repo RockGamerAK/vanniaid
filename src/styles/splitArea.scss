@@ -4,12 +4,12 @@
 }
 
 .split-area > img {
-    width: 50%;
+    width: 50dvw;
 }
 
 /* match the section padding for the text blocks for consistency */
 .split-area > :not(img) {
-    width: calc(100% - $main-padding*2);
+    width: calc(50dvw - $main-padding*2);
     padding-block: var(--section-padding-block);
     padding-inline: $main-padding;
 }
