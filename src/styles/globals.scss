@@ -74,6 +74,7 @@ img, image {
 }
 
 .content {
+  position: relative;
   margin-inline: auto;
 
   width: $site-items-width;
