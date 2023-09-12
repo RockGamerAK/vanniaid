@@ -55,19 +55,20 @@
         justify-items: start;
 
         & > * {
+            padding-inline: 0;
             box-sizing: border-box;
         }
     }
   
     /* if the non-image is first, place it in the second column (first column is empty to emulate the .wrapper) */
     .split-area > :not(img):first-child {
-        padding-left: 0;
+        padding-right: $main-padding;
         grid-column: 2 / 3;
     }
   
     /* if the non-image is last, place it in the third column (fourth column is empty to emulate the .wrapper) */
     .split-area > :not(img):last-child {
-        padding-right: 0;
+        padding-left: $main-padding;
         grid-column: 3 / 4;
     }
   
