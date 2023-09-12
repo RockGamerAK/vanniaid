@@ -1,0 +1,20 @@
+// colors
+$color-accent: #993333;
+$bg-priimary: white;
+$site-color: lch(5% 0 180);
+
+// nav
+$nav-bg-end: lch(5% 0 180);
+$nav-bg: linear-gradient(lch(15% 0 180), $nav-bg-end);
+$nav-gradient-start: rgba(0, 0, 0, 0.4);
+
+// nav button
+$nav-btn-bg: linear-gradient(white, lightgray);
+$nav-btn-text: white;
+$nav-btn-hover-darken-amt: 90%;
+
+// main
+$main-color: lch(25% 0 180);
+
+// footer
+$footer-color: lch(75% 0 180);

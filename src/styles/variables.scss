@@ -1,10 +1,7 @@
-// colors
-$color-accent: #993333;
-$bg-priimary: white;
+@import './colors.scss';
 
 // global
 $site-main-margin: 0rem; //0.625rem;
-$site-color: lch(5% 0 180);
 $site-items-width: 43.75rem;
 
 $page-title-font-size: 1.5rem;
@@ -16,21 +13,13 @@ $header-min-height: 6.25rem;
 
 // nav
 $nav-gap: 0;//1.5625rem;
-$nav-bg-end: lch(5% 0 180);
-$nav-bg: linear-gradient(lch(15% 0 180), $nav-bg-end);
-$nav-gradient-start: rgba(0, 0, 0, 0.4);
 
 // nav button
 $nav-btn-padding: 0.625rem calc(2.5rem/3);
-$nav-btn-bg: linear-gradient(white, lightgray);
-$nav-btn-text: white;
-$nav-btn-hover-darken-amt: 90%;
-
 $nav-btn-font-size: 0.9375rem;
 $nav-curr-btn-font-weight: bold;
 
 // main
-$main-color: lch(25% 0 180);
 $main-padding: 1rem;
 $main-gap: 1.5rem;
 
@@ -39,6 +28,5 @@ $content-font-size: 0.9375rem;
 $content-line-height: 1.5;
 
 // footer
-$footer-color: lch(75% 0 180);
 $footer-padding: 0.75rem;
 $footer-font-size: 0.75rem;
