@@ -3,10 +3,12 @@
 // .split-area {
 // }
 
+.split-area {
+    aspect-ratio: 16 / 9;
+}
+
 .split-area > * {
     box-sizing: border-box;
-    width: 50dvw;
-    aspect-ratio: 16 / 9;
 }
 
 /* match the section padding for the text blocks for consistency */
