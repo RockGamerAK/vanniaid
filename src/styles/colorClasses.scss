@@ -1,0 +1,15 @@
+@import './color.scss';
+
+// utility classes
+.clr-primary {
+    color: var(--color, $color-primary);
+}
+.clr-accent {
+    color: var(--color, $color-accent);
+}
+.bg-primary {
+    background-color: var(--bg-color, $bg-primary);
+}
+.bg-accent {
+    background-color: var(--bg-color, $bg-accent);
+}
