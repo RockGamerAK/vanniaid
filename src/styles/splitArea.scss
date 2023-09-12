@@ -53,6 +53,10 @@
     .split-area > :not(img) {
         align-content: center;
         justify-items: start;
+
+        & > * {
+            box-sizing: border-box;
+        }
     }
   
     /* if the non-image is first, place it in the second column (first column is empty to emulate the .wrapper) */
