@@ -14,7 +14,6 @@
 /* match the section padding for the text blocks for consistency */
 .split-area > :not(img) {
     padding-block: var(--section-padding-block);
-    padding-inline: $main-padding;
     display: grid;
     gap: $main-gap;
 }
