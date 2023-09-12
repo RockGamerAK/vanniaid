@@ -31,7 +31,6 @@ main {
 
   box-sizing: border-box;
   margin-inline: auto;
-  padding: $main-padding;
 
   background: $bg-primary;
   color: $main-color;
@@ -62,6 +61,7 @@ img, image {
 
 .page-description, .content p {
   margin-inline: auto;
+  padding-inline: $main-padding;
 
   width: min($site-items-width, 100%);
   max-width: 100%;
