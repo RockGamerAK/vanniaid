@@ -21,11 +21,11 @@ $main-color: lch(25% 0 180);
 $footer-color: lch(75% 0 180);
 
 // utility classes
-.clr-accent {
-    color: var(--color, $color-accent);
-}
 .clr-primary {
     color: var(--color, $color-primary);
+}
+.clr-accent {
+    color: var(--color, $color-accent);
 }
 .bg-primary {
     background-color: var(--bg-color, $bg-primary);
