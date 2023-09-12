@@ -1,6 +1,6 @@
 // colors
 $color-accent: #993333;
-$bg-priimary: white;
+$bg-primary: white;
 $site-color: lch(5% 0 180);
 
 // nav
@@ -18,3 +18,7 @@ $main-color: lch(25% 0 180);
 
 // footer
 $footer-color: lch(75% 0 180);
+
+.clr-accent {
+    color: $color-accent;
+}
