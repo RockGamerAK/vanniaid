@@ -56,11 +56,11 @@ img, image {
 }
 
 .page-description {
-  margin-inline: auto;
   margin-block: 0;
 }
 
 .page-description, .content p {
+  box-sizing: border-box;
   margin-inline: auto;
   padding-inline: $main-padding;
 
