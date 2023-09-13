@@ -11,5 +11,5 @@
     color: var(--color, $color-accent);
 }
 .bg-accent {
-    background-color: var(--bg-color, $bg-accent);
+    background-color: var(--bg-color, $color-accent);
 }
