@@ -7,8 +7,8 @@
 }
 
 html {
-  background: $color-accent;
-  color: $color-primary;
+  background: $clr-accent;
+  color: $clr-primary;
 
   font-family: var(--main-family);
   font-family: var(--font-family, system-ui), sans-serif;
@@ -33,7 +33,7 @@ main {
   box-sizing: border-box;
   margin-inline: auto;
 
-  background: $bg-primary;
+  background: white;
   color: $main-color;
 }
 
@@ -45,7 +45,7 @@ img, image {
   margin-inline: auto;
 
   max-width: $site-items-width;
-  color: $bg-accent;
+  color: $clr-primary;
 
   font-size: $page-title-font-size;
   font-weight: $page-title-font-weight;
