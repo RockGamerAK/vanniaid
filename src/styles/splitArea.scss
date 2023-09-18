@@ -17,7 +17,7 @@
     padding-block: 1fr;
     display: grid;
     gap: $main-gap;
-    &:last-child {
+    & :last-child {
         margin-block-end: $main-gap;
     }
 }
