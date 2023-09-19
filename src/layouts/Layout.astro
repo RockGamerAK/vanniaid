@@ -62,7 +62,7 @@ var headerBannerImage = `${siteName} Banner Image`
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
-				if (aHref.includes(location.hostname) === false) {
+				if (aHref.includes(location.hostname) || aHref.includes('://') === false) {
 					a.target = "_blank"
 				}
 			})
