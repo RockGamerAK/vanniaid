@@ -38,10 +38,11 @@ var headerBannerImage = `${siteName} Banner Image`
 			let currPageI = false
 			links.forEach(function(l, i) {
 				let lHref = l.href.split(location.host)[1]
+				if (lHref !== pageName) alert(`${lHref} !== ${pageName}`)
+				else alert(`${lHref} == ${pageName}`)
 				if (lHref === pageName) currPageI = i 
 			});
 			if (!!currPageI || currPageI === 0) {
-				let currPageEle = links[currPageI]
 				currPageEle.classList.add('page__selected')
 			}
 		</script>
