@@ -76,7 +76,7 @@ img, image {
   display: flex;
   flex-direction: column;
 
-  p:not(:last-child, + .split-area) {
+  :is(&, & .split-area) p:not(:last-child, + .split-area) {
     margin-block-end: 0;
   }
 
