@@ -57,7 +57,8 @@
             top: 50%;
             translate: 0 -50%;
 
-            width: 100%;
+            min-width: 100%;
+            min-height: 100%;
 
             object-fit: cover;
         }
@@ -97,7 +98,7 @@
   
     /* at large screens, ensure the background color goes to the edge of the page */
     .split-area > .area::before {
-        content: "";
+        content: '';
         position: absolute;
         inset: 0;
         background: inherit;
