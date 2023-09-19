@@ -6,7 +6,7 @@ if (!!enabled) {
     splitAreaImgs.forEach(function(img, i) {
         let imgSrc = img.src
         if (imgSrc.includes('://')) {
-            imgSrc.imgSrc.split('://')[1]
+            imgSrc = imgSrc.split('://')[1]
         }
         if (imgSrc.startsWith('via.placeholder.com')) {
             img.src = `https://via.placeholder.com/${img.clientWidth}x${img.clientHeight}`
