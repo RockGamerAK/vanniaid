@@ -17,11 +17,14 @@
     padding-block: $main-gap;
     display: grid;
     
+    & > :first-child {
+        margin-block-start: 0;
+    }
     & > * + * {
         margin-block-start: $main-gap;
     }
     & > :last-child {
-        margin-block-end: $main-gap;
+        margin-block-end: 0;
     }
 }
   
