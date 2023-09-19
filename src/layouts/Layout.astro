@@ -36,6 +36,9 @@ var headerBannerImage = `${siteName} Banner Image`
 			let pageName = [location.pathname]
 			if (pageName[0].endsWith('/')) {
 				pageName.push(pageName[0].substring(0, pageName[0].length-1))
+				if (pageName[pageName.length-1] === '') {
+					pageName.pop()
+				}
 			}
 			let links = document.querySelectorAll('.nav__btn')
 			let currPageI = false
