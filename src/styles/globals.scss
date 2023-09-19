@@ -83,7 +83,7 @@ img, image {
   & > * + & > * {
     margin-block-start: $main-gap;
   }
-  & :last-child {
+  & :last-child:not(.split-area) {
     margin-block-end: $main-gap;
   }  
 }
