@@ -70,12 +70,11 @@
             background: $nav-btn-bg;
             color: darken($nav-btn-text, $nav-btn-hover-darken-amt);
             font-weight: $nav-curr-btn-font-weight;
-
-            .page__selected:has(~ &), & ~ .page__selected {
-                background: transparent;
-                color: $nav-btn-text;
-                font-weight: normal;
-            }
+        }
+        .page__selected:has(~ &:is(:hover, :focus)), &:is(:hover, :focus) ~ .page__selected {
+            background: transparent;
+            color: $nav-btn-text;
+            font-weight: normal;
         }
     }
 }
