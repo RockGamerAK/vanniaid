@@ -14,7 +14,7 @@
 
 /* match the section padding for the text blocks for consistency */
 .split-area > .area {
-    padding-block: 1fr;
+    padding-block: $main-gap;
     display: grid;
     
     & > * + * {
@@ -30,10 +30,10 @@
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
         grid-template-columns:
-            minmax($main-padding, 1fr)
+            minmax($main-padding, $main-gap)
             minmax(0, calc(min(100%, $site-items-width) / 2))
             minmax(0, calc(min(100%, $site-items-width) / 2))
-            minmax($main-padding, 1fr);
+            minmax($main-padding, $main-gap);
   
         /* for positioning the pseudo-elements to fill in the rest of the background*/
         position: relative;
@@ -73,7 +73,6 @@
     /* make sure text doesn't touch the edge of the viewport and the content is vertically centered */
     .split-area > .area {
         align-content: center;
-        justify-items: start;
 
         & > * {
             padding-inline: 0;
@@ -83,13 +82,13 @@
   
     /* if the non-image is first, place it in the second column (first column is empty to emulate the .wrapper) */
     .split-area > .area:first-child {
-        padding-right: $main-padding;
+        padding-right: $main-gap;
         grid-column: 2 / 3;
     }
   
     /* if the non-image is last, place it in the third column (fourth column is empty to emulate the .wrapper) */
     .split-area > .area:last-child {
-        padding-left: $main-padding;
+        padding-left: $main-gap;
         grid-column: 3 / 4;
     }
   
