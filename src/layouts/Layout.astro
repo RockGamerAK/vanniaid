@@ -35,7 +35,7 @@ var headerBannerImage = `${siteName} Banner Image`
 		<script>
 			let pageName = [location.pathname]
 			if (pageName[0].endsWith('/')) {
-				pageName.push(0, pageName[0].substring(pageName[0].length-1))
+				pageName.push(pageName[0].substring(0, pageName[0].length-1))
 			}
 			alert(JSON.stringify(pageName))
 			let links = document.querySelectorAll('.nav__btn')
