@@ -48,8 +48,11 @@ var headerBannerImage = `${siteName} Banner Image`
 		<script>
 			var sTit = String(document.title)
 			if (sTit.includes(' | ')) sTit = sTit.split(' | ')
-			alert(sTit)
-			var sPosUrl = sTit.split(' ').join('').toLowerCase()
+			var sPosUrl = sTit
+			if (sPosUrl.includes(' ')) {
+				sPosUrl = sPosUrl.split(' ')
+			}
+			sPosUrl = sPosUrl.join('-').toLowerCase()
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
