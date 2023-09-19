@@ -16,6 +16,10 @@
 .split-area > .area {
     padding-block: 1fr;
     display: grid;
+    
+    & > * + & > * {
+        margin-block-start: $main-gap;
+    }
     & > :last-child {
         margin-block-end: $main-gap;
     }
