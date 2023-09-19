@@ -33,14 +33,17 @@ var headerBannerImage = `${siteName} Banner Image`
 		<slot />
 		<Footer siteName={siteName} empowermentPeople="Graphics for Good" designPerson="Adarsh Kumar" empowermentLink="https://graphics-for-good.com" />
 		<script>
-			let pageName = location.pathname
+			let pageName = [location.pathname]
+			if (pageName[0].endsWith('/')) {
+				pageName.push(pageName[0].substring(pageName[0].length-1))
+			}
 			let links = document.querySelectorAll('.nav__btn')
 			let currPageI = false
 			links.forEach(function(l, i) {
 				let lHref = l.href.split(location.host)[1]
-				if (lHref !== pageName) alert(`${lHref} !== ${pageName}`)
-				else alert(`${lHref} == ${pageName}`)
-				if (lHref === pageName) currPageI = i 
+				pageName.forEach(function(n, i2) {
+					if (lHref === n) currPageI = i 
+				})
 			});
 			if (!!currPageI || currPageI === 0) {
 				currPageEle.classList.add('page__selected')
