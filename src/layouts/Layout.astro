@@ -35,7 +35,7 @@ var headerBannerImage = `${siteName} Banner Image`
 		<script>
 			let pageName = [location.pathname]
 			if (pageName[0].endsWith('/')) {
-				pageName.push(pageName[0].substring(pageName[0].length-1))
+				pageName.push(0, pageName[0].substring(pageName[0].length-1))
 			}
 			let links = document.querySelectorAll('.nav__btn')
 			let currPageI = false
@@ -43,7 +43,6 @@ var headerBannerImage = `${siteName} Banner Image`
 				let lHref = l.href.split(location.host)[1]
 				pageName.forEach(function(n, i2) {
 					if (lHref === n) currPageI = i 
-					alert(`${lHref} | ${n}`)
 				})
 			});
 			if (!!currPageI || currPageI === 0) {
