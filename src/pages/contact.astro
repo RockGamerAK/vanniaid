@@ -20,14 +20,24 @@ import SplitArea from '../components/SplitArea.astro';
                 <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a><br>
                 www.vanniaid.org
             </p>
-            <p>
-                Click this button to donate:
-            </p>
-            <p>
-                <a href="/donate" class="donate">
-                    <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
-                </a>
-            </p>
+            <SplitArea idName="donate">
+                <div>
+                    <img src="/ef3-placeholder-image.svg" alt=""/>
+                </div>
+                <div class="bg-accent area">
+                    <p>Please contribute generously, as the future of these children is in your hands.</p>
+                    <p>
+                        <a href="/donate" class="donate">
+                            <img class="donate__image" src="/assets/VanniAidDONATE.jpg" alt="Donate to Vanni Aid" />
+                        </a>
+                    </p>
+                    <p>
+                        <em>
+                            Vanni Aid Foundation is a <a href="http://www.irs.gov/Charities-&-Non-Profits/Charitable-Organizations/Exemption-Requirements-Section-501(c)(3)-Organizations">501(c)3</a> organization. Your contribution is tax deductible.
+                        </em>
+                    </p>
+                </div>
+            </SplitArea>
             <p>
                 Our GUIDESTAR profile links:<br>
                 <a href="http://www.guidestar.org/organizations/45-2531243/vanni-aid-foundation.aspx">http://www.guidestar.org/organizations/45-2531243/vanni-aid-foundation.aspx</a><br>
