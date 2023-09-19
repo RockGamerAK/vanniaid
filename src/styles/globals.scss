@@ -83,7 +83,7 @@ img, image {
   & > * + & > * {
     margin-block-start: $main-gap;
   }
-  &:last-child {
+  & :last-child {
     margin-block-end: $main-gap;
   }  
 }
