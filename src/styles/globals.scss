@@ -76,10 +76,10 @@ img, image {
   display: flex;
   flex-direction: column;
 
-  p:not(:last-child, + .split-area) {
+  p:not(:last-child, :has( + .split-area)) {
     margin-block-end: 0;
   }
-  .split-area > .area p:not(:last-child, + .split-area) {
+  .split-area > .area p:not(:last-child, :has( + .split-area)) {
     margin-block-end: 0;
   }
 
