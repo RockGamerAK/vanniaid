@@ -60,13 +60,10 @@
         text-transform: uppercase;
         text-decoration: none;
 
-        &.page__selected {
-            font-weight: $nav-curr-btn-font-weight;
-        }
-
-        &:hover, &:focus {
+        &:is(.page__selected, :hover, :focus) {
             background: $nav-btn-bg;
-            color: darken($nav-btn-text, $nav-btn-hover-darken-amt)
+            color: darken($nav-btn-text, $nav-btn-hover-darken-amt);
+            font-weight: $nav-curr-btn-font-weight;
         }
     }
 }
