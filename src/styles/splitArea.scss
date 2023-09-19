@@ -16,7 +16,7 @@
 .split-area > :not(img) {
     padding-block: 1fr;
     display: grid;
-    & :last-child {
+    & > * > :last-child {
         margin-block-end: $main-gap;
     }
 }
