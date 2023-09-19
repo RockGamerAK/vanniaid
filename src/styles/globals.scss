@@ -76,14 +76,14 @@ img, image {
   display: flex;
   flex-direction: column;
 
-  p:not(:last-child) {
+  p:not(:last-child, + .split-area) {
     margin-block-end: 0;
   }
 
   & > * + & > * {
     margin-block-start: $main-gap;
   }
-  & > :last-child:not(.split-area) {
+  & > :last-child:not(.split-area,  + .split-area) {
     margin-block-end: $main-gap;
   }  
 }
