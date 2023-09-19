@@ -41,6 +41,7 @@ var headerBannerImage = `${siteName} Banner Image`
 				if (lHref === pageName) currPageI = i 
 			});
 			if (!!currPageI || currPageI == 0) {
+				alert(currPageI)
 				let currPageEle = links[currPageI]
 				currPageEle.classList.add('page__selected')
 			}
