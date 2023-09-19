@@ -30,10 +30,10 @@
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
         grid-template-columns:
-            minmax($main-padding, 1fr)
+            minmax($main-gap, 1fr)
             minmax(0, calc(min(100%, $site-items-width) / 2))
             minmax(0, calc(min(100%, $site-items-width) / 2))
-            minmax($main-padding, 1fr);
+            minmax($main-gap, 1fr);
   
         /* for positioning the pseudo-elements to fill in the rest of the background*/
         position: relative;
