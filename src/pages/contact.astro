@@ -6,20 +6,27 @@ import SplitArea from '../components/SplitArea.astro';
     <main id="content">
         <h1 class="page-title">Contact</h1>
         <section class="content">
-            <p>
-                Please contact us with any questions at:
-            </p>
-            <p>
-                VANNI AID FOUNDATION<br>
-                c/o Josephine & Wiji Ratnathicam<br>
-                61 Mystic Drive<br>
-                Ossining, NY 10562<br>
-            </p>
-            <p>
-                <a href="tel:9147371358">(914) 737-1358</a><br>
-                <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a><br>
-                www.vanniaid.org
-            </p>
+            <SplitArea idName="contact">
+                <div class="bg-primary clr-white area">
+                    <p>
+                        Please contact us with any questions at:
+                    </p>
+                    <p>
+                        VANNI AID FOUNDATION<br>
+                        c/o Josephine & Wiji Ratnathicam<br>
+                        61 Mystic Drive<br>
+                        Ossining, NY 10562<br>
+                    </p>
+                    <p>
+                        <a href="tel:9147371358">(914) 737-1358</a><br>
+                        <a href="mailto:vanniaid@gmail.com">vanniaid@gmail.com</a><br>
+                        www.vanniaid.org
+                    </p>
+                </div>
+                <div>
+                    <img src="/ef3-placeholder-image.svg" alt=""/>
+                </div>
+            </SplitArea>
             <SplitArea idName="donate">
                 <div>
                     <img src="/ef3-placeholder-image.svg" alt=""/>
