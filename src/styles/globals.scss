@@ -86,7 +86,7 @@ img, image {
   & > *:not(:first-child, .split-area) {
     margin-block-start: $main-gap;
   }
-  & > *:is(:last-child:not(.split-area), :has( + .split-area)) {
+  & > *:is(:last-child, :has( + .split-area):not(.split-area)) {
     margin-block-end: $main-gap;
   }  
 }
