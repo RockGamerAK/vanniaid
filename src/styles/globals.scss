@@ -79,14 +79,10 @@ img, image {
   p:not(:last-child, :has( + .split-area)) {
     margin-block-end: 0;
   }
-  .split-area > .area p:not(:last-child, :has( + .split-area)) {
-    margin-block-end: 0;
-  }
-
   & > *:not(:first-child, .split-area) {
     margin-block-start: $main-gap;
   }
-  & > *:is(:last-child, :has( + .split-area):not(.split-area)) {
+  & > *:is(:last-child, :has( + .split-area)):not(.split-area) {
     margin-block-end: $main-gap;
   }  
 }

@@ -17,6 +17,9 @@
     padding-block: $main-gap;
     display: grid;
     
+    p:not(:last-child, :has( + .split-area)) {
+        margin-block-end: 0;
+    }
     & > * {
         margin-block-end: 0;
     }
