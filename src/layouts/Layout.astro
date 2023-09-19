@@ -57,10 +57,12 @@ var headerBannerImage = `${siteName} Banner Image`
 				sPosUrl = sPosUrl.split(' ')
 			}
 			sPosUrl = sPosUrl.join('-').toLowerCase()
+		</script>
+		<script>
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
-				if (aHref.includes(sPosUrl) === false) {
+				if (aHref.includes(location.hostname) === false) {
 					a.target = "_blank"
 				}
 			})
