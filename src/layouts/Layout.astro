@@ -61,18 +61,18 @@ var headerBannerImage = `${siteName} Banner Image`
 			}
 			sPosUrl = sPosUrl.join('-').toLowerCase()
 		</script>
-		<script is:inline>
+		<script>
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
 				let aHref = a.href
 				if (aHref.includes('://') === false && aHref.startsWith('javascript:') === false) {
 					aHref = `${location.protocol}//${location.host}${aHref}`
 				}
-				if (aHref.includes(location.hostname)) {
+				if (aHref.includes(location.hostname) === false) {
 					a.target = "_blank"
 				}
 			})
 		</script>
-		<script is:inline src="/eruda.js"></script>
+		<!-- <script is:inline src="/eruda.js"></script> -->
 	</body>
 </html>
