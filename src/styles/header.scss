@@ -71,7 +71,7 @@
             color: darken($nav-btn-text, $nav-btn-hover-darken-amt);
             font-weight: $nav-curr-btn-font-weight;
 
-            & ~ .page__selected {
+            .page__selected:has(~ &), & ~ .page__selected {
                 background: transparent;
                 color: $nav-btn-text;
                 font-weight: normal;
