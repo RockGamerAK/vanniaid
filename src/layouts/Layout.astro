@@ -47,8 +47,8 @@ var headerBannerImage = `${siteName} Banner Image`
 		</script>
 		<script>
 			var sTit = String(document.title)
-			alert(sTit)
 			if (sTit.includes(' | ')) sTit = sTit.split(' | ')
+			alert(sTit)
 			var sPosUrl = sTit.split(' ').join('').toLowerCase()
 			let aS = document.querySelectorAll('a')
 			aS.forEach(function(a, i) {
