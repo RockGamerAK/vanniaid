@@ -43,7 +43,7 @@ var headerBannerImage = `${siteName} Banner Image`
 				let lHref = l.href.split(location.host)[1]
 				pageName.forEach(function(n, i2) {
 					if (lHref === n) currPageI = i 
-					alert(currPageI)
+					alert(`${aHref} | ${n}`)
 				})
 			});
 			if (!!currPageI || currPageI === 0) {
