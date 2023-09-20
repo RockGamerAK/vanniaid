@@ -91,7 +91,14 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+.btn {
+  min-height: 50px;
 
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: solid 1px $btn-border-clr;
+  background-color: $btn-bg;
+}
 
 
 
