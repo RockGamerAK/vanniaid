@@ -97,7 +97,7 @@ code {
   background-color: var(--bg-color, $btn-bg);
   border-radius: var(--border-radius, $btn-border-radius);
 
-  font-size: var(--font-size, calc((1rem/1rem) * 15pt));
+  // font-size: var(--font-size, calc((1rem/1rem) * 15pt));
 
   .bg-primary &:is(:hover, :focus) {
     background-color: var(--bg-color, $clr-accent);
