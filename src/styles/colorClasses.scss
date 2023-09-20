@@ -26,4 +26,7 @@
     a:not(.btn) {
         color: var(--color, $link-light-clr)
     }
+    .btn {
+        --bg-color: $link-light-clr
+    }
 }
