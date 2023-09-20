@@ -97,6 +97,14 @@ code {
   border: solid 1px var(--border-color, $btn-border-clr);
   background-color: var(--bg-color, $btn-bg);
   border-radius: var(--border-radius, $btn-border-radius);
+
+  .bg-primary & {
+    --border-color: white;
+    background-color: var(--bg-color, $clr-accent);
+  }
+  .bg-accent & {
+    background-color: var(--bg-color, $clr-primary);
+  }
 }
 
 
