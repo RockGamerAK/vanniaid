@@ -8,6 +8,7 @@
     background-color: var(--bg-color, $clr-primary);
     .btn {
         --border-color: white;
+        --bg-color: $clr-accent;
     }
 }
 .clr-accent {
@@ -25,8 +26,5 @@
 .link-light {
     a:not(.btn) {
         color: var(--color, $link-light-clr)
-    }
-    .btn {
-        --bg-color: $link-light-clr
     }
 }
