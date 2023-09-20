@@ -55,10 +55,9 @@
 
         & > img {
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 50%;
             top: 50%;
-            translate: 0 -50%;
+            translate: -50% -50%;
 
             min-width: 100%;
             min-height: 100%;
