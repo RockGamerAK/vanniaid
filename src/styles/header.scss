@@ -72,10 +72,6 @@
     }
 }
 
-.page__selected:has(~ .nav__btn:is(:hover, :focus)), .nav__btn:is(:hover, :focus) ~ .page__selected {
-    font-weight: normal;
-}
-
 @media (width < 572px) {
 
 }
