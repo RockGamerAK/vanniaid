@@ -19,3 +19,6 @@
 .bg-white {
     background-color: var(--bg-color, white);
 }
+.link-light {
+    color: var(--color, $link-light-clr)
+}
