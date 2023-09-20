@@ -6,6 +6,9 @@
 }
 .bg-primary {
     background-color: var(--bg-color, $clr-primary);
+    .btn {
+        --border-color: white;
+    }
 }
 .clr-accent {
     color: var(--color, $clr-accent);
