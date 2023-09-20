@@ -98,11 +98,11 @@ code {
   background-color: var(--bg-color, $btn-bg);
   border-radius: var(--border-radius, $btn-border-radius);
 
-  .bg-primary & {
+  .bg-primary &:is(:hover, :focus) {
     --border-color: white;
     background-color: var(--bg-color, $clr-accent);
   }
-  .bg-accent & {
+  .bg-accent &:is(:hover, :focus) {
     background-color: var(--bg-color, $clr-primary);
   }
 }
