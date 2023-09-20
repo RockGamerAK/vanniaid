@@ -61,8 +61,6 @@
         text-decoration: none;
 
         &.page__selected {
-            background: $nav-btn-bg;
-            color: darken($nav-btn-text, $nav-btn-hover-darken-amt);
             font-weight: $nav-curr-btn-font-weight;
 
         }
@@ -75,8 +73,6 @@
 }
 
 .page__selected:has(~ .nav__btn:is(:hover, :focus)), .nav__btn:is(:hover, :focus) ~ .page__selected {
-    background: transparent;
-    color: $nav-btn-text;
     font-weight: normal;
 }
 
