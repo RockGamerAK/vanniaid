@@ -21,6 +21,8 @@
 }
 .link-light {
     a {
-        color: var(--color, $link-light-clr)
+        :not(.btn) & {
+            color: var(--color, $link-light-clr)
+        }
     }
 }
