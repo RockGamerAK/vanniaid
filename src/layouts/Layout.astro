@@ -68,11 +68,11 @@ var headerBannerImage = `${siteName} Banner Image`
 				if (aHref.includes('://') === false && aHref.startsWith('javascript:') === false) {
 					aHref = `${location.protocol}//${location.host}${aHref}`
 				}
-				if (aHref.includes(location.hostname) === false) {
+				if (aHref.includes(location.hostname) === false && aHref.startsWith('javascript:') === false) {
 					a.target = "_blank"
 				}
 			})
 		</script>
-		<!-- <script is:inline src="/eruda.js"></script> -->
+		<script is:inline src="/eruda.js"></script>
 	</body>
 </html>
