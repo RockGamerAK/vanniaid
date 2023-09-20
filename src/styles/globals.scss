@@ -99,7 +99,6 @@ code {
   border-radius: var(--border-radius, $btn-border-radius);
 
   .bg-primary &:is(:hover, :focus) {
-    --border-color: white;
     background-color: var(--bg-color, $clr-accent);
   }
   .bg-accent &:is(:hover, :focus) {
