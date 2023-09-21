@@ -67,7 +67,7 @@
         &:hover, &:focus {
             background: $nav-btn-bg;
             color: darken($nav-btn-text, $nav-btn-hover-darken-amt);
-            font-weight: $nav-curr-btn-font-weight;
+            // font-weight: $nav-curr-btn-font-weight;
         }
     }
 }
