@@ -101,9 +101,9 @@ code {
   border: solid 1px var(--border-color, $btn-border-clr);
   border-radius: var(--border-radius, $btn-border-radius);
 
-  font-size: var(--font-size, auto);
-  // --font-size: calc((1rem/1rem) * 15pt);
+  font-size: var(--font-size, $btn-font-size);
   text-decoration: none;
+  line-height: 100%;
 
   .bg-primary &:is(:hover, :focus) {
     background-color: var(--bg-color, $clr-accent);

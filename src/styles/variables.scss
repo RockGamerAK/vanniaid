@@ -10,7 +10,8 @@ $page-title-font-weight: normal;
 // btn
 $btn-border-clr: black;
 $btn-bg: lch(83.5% 23.69 81.7);
-$btn-border-radius: 25px;
+$btn-border-radius: 2em;
+$btn-font-size: calc((1rem/1rem) * 15pt);
 
 // header
 $header-padding: 2rem;
