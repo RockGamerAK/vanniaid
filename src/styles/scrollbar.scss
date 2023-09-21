@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 $scrollbar-width: 10px;
-$scrollbar-clr: gray;//mix(black, clr-primary, 20%);
+$scrollbar-clr: lightgray;//mix(black, clr-primary, 20%);
 $scrollbar-thumb-clr: mix(black, $scrollbar-clr, 20%);
 $scrollbar-thumb-hover-clr: mix(black, $scrollbar-clr, 20%);
 
