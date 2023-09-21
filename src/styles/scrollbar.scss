@@ -27,7 +27,7 @@ $scrollbar-thumb-hover-clr: lighten($scrollbar-clr, 10%);
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollbar-hover-thumb-color, $scrollbar-hover-thumb-clr); 
+  background-color: var(--scrollbar-thumb-hover-color, $scrollbar-thumb-hover-clr); 
   transition: background-color 500ms ease-out;
 }
 
