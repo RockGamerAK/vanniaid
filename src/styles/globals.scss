@@ -108,6 +108,7 @@ code {
   }
   .bg-accent &:is(:hover, :focus) {
     background-color: var(--bg-color, $clr-primary);
+    color: var(--color, white)
   }
 }
 
