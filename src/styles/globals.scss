@@ -115,8 +115,10 @@ code {
 
 
 
-.donate:not(.btn) {
-  display: inline-block;
+.donate {
+  &:not(.btn) {
+    display: inline-block;
+  }
   &__image {
       max-width: 7.0625rem;
       .large & {
