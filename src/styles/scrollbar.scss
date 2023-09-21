@@ -1,9 +1,9 @@
 @import './variables.scss';
 
 $scrollbar-width: 10px;
-$scrollbar-clr: gray;//mix(white, clr-primary, 20%);
-$scrollbar-thumb-clr: mix(white, $scrollbar-clr, 20%);
-$scrollbar-thumb-hover-clr: mix(white, $scrollbar-clr, 20%);
+$scrollbar-clr: gray;//mix(black, clr-primary, 20%);
+$scrollbar-thumb-clr: mix(black, $scrollbar-clr, 20%);
+$scrollbar-thumb-hover-clr: mix(black, $scrollbar-clr, 20%);
 
 /*  Custom Scrollbar  */
 ::-webkit-scrollbar {
