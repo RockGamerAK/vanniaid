@@ -21,6 +21,9 @@
 }
 .link-light {
     a:not(.btn) {
-        color: var(--color, $link-light-clr)
+        color: var(--color, $link-light-clr);
+        &:visited {
+            color: var(--color, $link-light-hover-clr);
+        }
     }
 }
