@@ -101,9 +101,13 @@ code {
   border: solid 1px var(--border-color, $btn-border-clr);
   border-radius: var(--border-radius, $btn-border-radius);
 
-  font-size: var(--font-size, $btn-font-size);
+  font-size: var(--font-size, calc((1rem/1rem) * $btn-font-size));
   text-decoration: none;
   line-height: 100%;
+
+  &.large {
+    font-size: var(--font-size, calc((1rem/1rem) * $btn-large-font-size));
+  }
 
   .bg-primary &:is(:hover, :focus) {
     background-color: var(--bg-color, $clr-accent);
@@ -122,7 +126,7 @@ code {
   &__image {
       max-width: 7.0625rem;
       .large & {
-          max-width: calc(7.0625rem*2);
+          max-width: 14.125rem;
       }
   }
 }
