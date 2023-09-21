@@ -92,14 +92,17 @@ code {
 }
 
 .btn {
+  display: inline-block;
+
   padding: 0.75rem 1.5rem;
-  border: solid 1px var(--border-color, $btn-border-clr);
+
   background-color: var(--bg-color, $btn-bg);
+
+  border: solid 1px var(--border-color, $btn-border-clr);
   border-radius: var(--border-radius, $btn-border-radius);
 
   font-size: var(--font-size, auto);
   // --font-size: calc((1rem/1rem) * 15pt);
-
   text-decoration: none;
 
   .bg-primary &:is(:hover, :focus) {
