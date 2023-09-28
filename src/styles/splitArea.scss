@@ -76,7 +76,7 @@
   
     /* if the image is on the right, it covers the entire right half */
     .split-area > .img-parent:last-child {
-        grid-column: 3 / -1;
+        grid-column: 4 / -1;
     }
   
     /* make sure text doesn't touch the edge of the viewport and the content is vertically centered */
@@ -98,7 +98,7 @@
     /* if the non-image is last, place it in the third column (fourth column is empty to emulate the .wrapper) */
     .split-area > .area:last-child {
         padding-left: $main-gap;
-        grid-column: 3 / 4;
+        grid-column: 4 / 5;
     }
   
     /* at large screens, ensure the background color goes to the edge of the page */
