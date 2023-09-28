@@ -32,7 +32,7 @@
     }
 }
   
-@media (min-width: 600px) {
+@media (min-width: calc(525px - $main-gap*2)) {
     .split-area {
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
