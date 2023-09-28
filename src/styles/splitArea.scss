@@ -15,7 +15,7 @@
 
 /* match the section padding for the text blocks for consistency */
 .split-area > .area {
-    // padding-block: $main-gap;
+    padding-block: $main-gap;
     display: grid;
     
     p:not(:last-child, :has( + .split-area)) {
