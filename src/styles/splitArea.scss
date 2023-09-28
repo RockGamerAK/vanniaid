@@ -2,10 +2,8 @@
 
 .split-area {
     aspect-ratio: 20 / 5;
-    margin: $main-gap;
-    margin-block-start: 0;
+    margin-inline: $main-gap;
     &:last-child {
-        // margin-block-end: 0;
     }
     & > * {
         box-sizing: border-box;
@@ -15,6 +13,7 @@
 
 /* match the section padding for the text blocks for consistency */
 .split-area > .area {
+    margin-inline: $main-gap;
     padding: $main-gap;
     display: grid;
     
