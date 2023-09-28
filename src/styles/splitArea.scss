@@ -120,6 +120,6 @@
   
     /* ensures the background color fills the entire right side */
     .split-area > .area:last-child::before {
-        grid-column: 4 / 5;
+        grid-column: 5 / -1;
     }
 }
