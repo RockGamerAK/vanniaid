@@ -65,7 +65,7 @@
     }
 
     .split-area > .vertical-bar {
-        background-color: black;
+        background-color: $nav-gradient-start;
         border-radius: var(--border-radius, $site-items-border-radius);
     }
   
