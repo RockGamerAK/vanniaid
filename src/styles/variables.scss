@@ -3,10 +3,12 @@
 // global
 $site-main-margin: 0rem; //0.625rem;
 $site-items-width: 43.75rem;
+$site-items-border-radius: 25px;
 
 $site-font: system-ui;
 $page-title-font-size: 2rem;
 $page-title-font-weight: normal;
+
 
 // btn
 $btn-color: black;
@@ -38,7 +40,7 @@ $content-font-size: 0.9375rem;
 $content-line-height: 1.5;
 
 // split area
-$split-area-vertical-bar-width: 5px;
+$split-area-vertical-bar-width: 2px;
 
 // footer
 $footer-padding: 0.75rem;

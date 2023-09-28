@@ -17,6 +17,7 @@
 .split-area > .area {
     padding-block: $main-gap;
     display: grid;
+    border-radius: var(--border-radius, $site-items-border-radius);
     
     p:not(:last-child, :has( + .split-area)) {
         margin-block-end: 0;
@@ -43,7 +44,7 @@
             minmax(0, calc(min(100%, $site-items-width) / 2))
             minmax($main-gap, 1fr);
   
-        // gap: $main-gap;
+        gap: $main-gap;
             /* for positioning the pseudo-elements to fill in the rest of the background*/
         position: relative;
     }
@@ -70,7 +71,9 @@
     }
 
     .split-area > .vertical-bar {
+        background-color: black;
         grid-column: 3 / 4;
+        border-radius: var(--border-radius, $site-items-border-radius);
     }
   
     /* if the image is on the left, it covers the entire left half */
