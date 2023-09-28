@@ -37,12 +37,7 @@
     .split-area {
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
-        grid-template-columns:
-            minmax($main-gap, 1fr)
-            minmax(0, calc(min(100%, $site-items-width) / 2))
-            $split-area-vertical-bar-width
-            minmax(0, calc(min(100%, $site-items-width) / 2))
-            minmax($main-gap, 1fr);
+        grid-template-columns: 1fr $split-area-vertical-bar-width 1fr;
   
         gap: $main-gap;
             /* for positioning the pseudo-elements to fill in the rest of the background*/
@@ -107,22 +102,4 @@
         padding-left: $main-gap;
         grid-column: 4 / 5;
     }
-  
-    /* at large screens, ensure the background color goes to the edge of the page */
-    .split-area > .area::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: inherit;
-    }
-  
-    /* ensures the background color fills the entire left side */
-    .split-area > .area:first-child::before {
-        grid-column: 1 / 2;
-    }
-  
-    /* ensures the background color fills the entire right side */
-    .split-area > .area:last-child::before {
-        grid-column: 5 / -1;
-    }
-}
+  }
