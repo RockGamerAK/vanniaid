@@ -39,6 +39,7 @@
         grid-template-columns:
             minmax($main-gap, 1fr)
             minmax(0, calc(min(100%, $site-items-width) / 2))
+            $split-area-vertical-bar-width
             minmax(0, calc(min(100%, $site-items-width) / 2))
             minmax($main-gap, 1fr);
   
