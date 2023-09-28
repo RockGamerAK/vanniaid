@@ -68,6 +68,10 @@
             object-fit: cover;
         }
     }
+
+    .split-area > .vertical-bar {
+        grid-column: 3 / 4;
+    }
   
     /* if the image is on the left, it covers the entire left half */
     .split-area > .img-parent:first-child {
