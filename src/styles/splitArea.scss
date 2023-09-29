@@ -2,16 +2,10 @@
 
 .split-area {
     aspect-ratio: 20 / 5;
-    margin-inline: $main-gap;
+    margin: $main-gap;
     & > * {
         box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
-        &:not(.vertical-bar) {
-            margin-block: $main-gap;
-        }
-        &.img-parent {
-            height: calc(100% - $main-gap*2)
-        }
     }
 }
 
@@ -67,6 +61,8 @@
     }
 
     .split-area > .vertical-bar {
+        translate: 0  calc(-1*$main-gap);
+        height: calc(100% + $main-gap*2);
         background-color: $nav-gradient-start;
     }
   
