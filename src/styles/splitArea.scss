@@ -3,7 +3,7 @@
 .split-area {
     aspect-ratio: 20 / 5;
     margin: $main-gap;
-    & > * {
+    & > *:not(.vertical-bar) {
         box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
     }
@@ -63,7 +63,6 @@
     .split-area > .vertical-bar {
         translate: 0  calc(-1*$main-gap);
         height: calc(100% + $main-gap*2);
-        background-color: $nav-gradient-start;
     }
   
     /* make sure text doesn't touch the edge of the viewport and the content is vertically centered */
