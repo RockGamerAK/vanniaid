@@ -7,11 +7,11 @@
         box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
     }
-    &:has(+ .horizontal-bar + &) > * + .vertical-bar:has(+ *) {
+    &:has(+ .horizontal-bar) > * + .vertical-bar:has(+ *) {
         border-radius: var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius) 0 0;
     }
       
-    & + .horizontal-bar + & > * + .vertical-bar:has(+ *) {
+    .horizontal-bar + & > * + .vertical-bar:has(+ *) {
         border-radius: 0 0 var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius);
     }
 }
