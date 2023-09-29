@@ -119,18 +119,6 @@ code {
   background-color: $nav-gradient-start;
 }
 
-* + .vertical-bar:has( + *) {
-  border-radius: var(--border-radius, $site-items-border-radius);
-}
-
-.split-area:has(.split-area) > * + .vertical-bar:has( + *) {
-  border-radius: var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius) 0 0;
-}
-
-.split-area + .split-area > * + .vertical-bar:has( + *) {
-  border-radius: 0 0 var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius);
-}
-
 .horizontal-bar {
   height: $bar-size;
   min-width: 100%;
