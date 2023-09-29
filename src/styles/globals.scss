@@ -126,10 +126,12 @@ code {
   background-color: $nav-gradient-start;
   border-radius: var(--border-radius, $site-items-border-radius);
 }
-.split-area + .horizontal-bar {
+.split-area + .horizontal-bar, 
+.horizontal-bar:first-child {
   margin-block-start: 0;
 }
-.horizontal-bar:has(+ .split-area) {
+.horizontal-bar:has(+ .split-area), 
+.horizontal-bar:last-child {
   margin-block-end: 0;
 }
 
