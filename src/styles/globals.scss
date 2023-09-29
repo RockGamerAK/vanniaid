@@ -124,7 +124,7 @@ code {
   min-width: 100%;
   background-color: $nav-gradient-start;
 }
-.split-area + .horizontal-bar:has( + .split-area) {
+.split-area + .horizontal-bar:has(+ .split-area) {
   margin-block: 0;
 }
 
