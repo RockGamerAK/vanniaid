@@ -14,7 +14,6 @@
 
 /* match the section padding for the text blocks for consistency */
 .split-area > .area {
-    margin-inline: $main-gap;
     padding: $main-gap;
     display: grid;
     
