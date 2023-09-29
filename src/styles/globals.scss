@@ -72,10 +72,10 @@ img, image {
   p:not(:last-child, :has( + .split-area)) {
     margin-block-end: 0;
   }
-  & > *:not(:first-child, .split-area) {
+  & > *:not(:first-child, .split-area, .horizontal-bar) {
     margin-block-start: $main-gap;
   }
-  & > *:is(:last-child, :has( + .split-area)):not(.split-area) {
+  & > *:is(:last-child, :has( + .split-area)):not(.split-area, .horizontal-bar) {
     margin-block-end: $main-gap;
   }  
 }
@@ -122,6 +122,7 @@ code {
 .horizontal-bar {
   height: $bar-size;
   min-width: 100%;
+  margin-block: $main-gap;
   background-color: $nav-gradient-start;
   border-radius: var(--border-radius, $site-items-border-radius);
 }
