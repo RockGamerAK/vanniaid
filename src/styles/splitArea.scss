@@ -37,7 +37,7 @@
     .split-area {
         /* outermost columns emulate the spacing from the .wrapper while the two inner columns divide the rest of the space into two equal parts */
         display: grid;
-        grid-template-columns: 1fr $split-area-vertical-bar-width 1fr;
+        grid-template-columns: 1fr $bar-size 1fr;
   
         gap: $main-gap;
             /* for positioning the pseudo-elements to fill in the rest of the background*/
