@@ -6,6 +6,7 @@
     &:last-child {
     }
     & > * {
+        margin-block: $main-gap;
         box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
     }
