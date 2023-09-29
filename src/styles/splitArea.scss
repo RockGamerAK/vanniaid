@@ -3,13 +3,14 @@
 .split-area {
     aspect-ratio: 20 / 5;
     margin-inline: $main-gap;
-    &:last-child {
-    }
     & > * {
-        // box-sizing: border-box;
+        box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
         &:not(.vertical-bar) {
             margin-block: $main-gap;
+        }
+        &.img-parent {
+            height: calc(100% - $main-gap*2)
         }
     }
 }
