@@ -123,6 +123,7 @@ code {
   height: $bar-size;
   min-width: 100%;
   background-color: $nav-gradient-start;
+  border-radius: var(--border-radius, $site-items-border-radius);
 }
 .split-area + .horizontal-bar:has(+ .split-area) {
   margin-block: 0;
