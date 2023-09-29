@@ -7,6 +7,13 @@
         box-sizing: border-box;
         border-radius: var(--border-radius, $site-items-border-radius);
     }
+    &:has(&) > * + .vertical-bar:has( + *) {
+        border-radius: var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius) 0 0;
+    }
+      
+    & + & > * + .vertical-bar:has( + *) {
+        border-radius: 0 0 var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius);
+    }
 }
 
 /* match the section padding for the text blocks for consistency */
@@ -36,15 +43,7 @@
   
         gap: $main-gap;
             /* for positioning the pseudo-elements to fill in the rest of the background*/
-        position: relative;
-        &:has(&) > * + .vertical-bar:has( + *) {
-            border-radius: var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius) 0 0;
-        }
-          
-        & + & > * + .vertical-bar:has( + *) {
-            border-radius: 0 0 var(--border-radius, $site-items-border-radius) var(--border-radius, $site-items-border-radius);
-        }
-          
+        position: relative;          
     }
   
     /* ensure the image fill up the entire space available */
