@@ -60,6 +60,8 @@
         text-transform: uppercase;
         text-decoration: none;
 
+        border-radius: 25px;
+
         &.page__selected {
             font-weight: $nav-curr-btn-font-weight;
 
