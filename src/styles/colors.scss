@@ -7,11 +7,11 @@ $link-light-hover-clr: hsl(120, 100%, 25%);
 
 // nav
 $nav-bg-end: lch(5% 0 180);
-$nav-bg: linear-gradient(lch(15% 0 180), $nav-bg-end);
+// $nav-bg: linear-gradient(lch(15% 0 180), $nav-bg-end);
 $nav-gradient-start: rgba(0, 0, 0, 0.4);
 
 // nav button
-$nav-btn-bg: linear-gradient(white, lightgray);
+$nav-btn-bg: white;
 $nav-btn-text: white;
 $nav-btn-hover-darken-amt: 90%;
 
