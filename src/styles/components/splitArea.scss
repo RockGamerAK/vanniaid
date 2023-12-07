@@ -64,7 +64,7 @@
             min-width: 100%;
             min-height: 100%;
 
-            scale: var(--scale, 1);
+            width: calc(100%*var(--scale, 1));
 
             border-radius: inherit;
 
