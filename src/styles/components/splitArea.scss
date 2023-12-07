@@ -65,6 +65,8 @@
 
             scale: var(--scale, 1);
 
+            border-radius: inherit;
+
             object-fit: cover;
         }
     }
