@@ -56,12 +56,14 @@
 
         & > img {
             position: absolute;
-            left: 50%;
+            left: var(--left, 50%);
             top: var(--top, 50%);
-            translate: -50% var(--translate-y, -50%);
+            translate: var(--translate-x, -50%) var(--translate-y, -50%);
 
             min-width: 100%;
             min-height: 100%;
+
+            scale: var(--scale, 1);
 
             object-fit: cover;
         }
