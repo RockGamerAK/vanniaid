@@ -58,6 +58,7 @@
             position: absolute;
             left: var(--left, 50%);
             top: var(--top, 50%);
+            bottom: var(--bottom, initial);
             translate: var(--translate-x, -50%) var(--translate-y, -50%);
 
             min-width: 100%;
