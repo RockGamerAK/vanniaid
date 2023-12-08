@@ -64,11 +64,16 @@
             min-width: 100%;
             min-height: 100%;
 
-            width: calc(100%*var(--scale, 1));
+            width: 100%;
 
             border-radius: inherit;
 
-            object-fit: cover;
+            &:not(.scaled) {
+                object-fit: cover;
+            }
+            .scaled {
+                width: calc(100%*var(--scale, 1));
+            }
         }
     }
 
