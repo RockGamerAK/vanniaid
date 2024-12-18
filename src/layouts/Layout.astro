@@ -16,8 +16,6 @@ if (dTitle.startsWith(' | ')) {
 	dTitle = dTitle.replace(' | ', '')
 }
 
-var base = Astro.base
-
 var headerBannerImage = `${siteName} Banner Image`
 
 // need to add designPersonLink to footer
@@ -30,7 +28,7 @@ var headerBannerImage = `${siteName} Banner Image`
 		<meta name="viewport" content="width=device-width">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<title>{dTitle}</title>
-		<base href={base} />
+		<base href={Astro.base || '/VanniAid/'} />
 	</head>
 	<body>
 		<Header image="/assets/VanniAidBanner-May13.jpg" alt={headerBannerImage} />
