@@ -26,12 +26,12 @@ var headerBannerImage = `${siteName} Banner Image`
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<title>{dTitle}</title>
 		<base href={Astro.base || '/VanniAid/'} />
 	</head>
 	<body>
-		<Header image="/assets/VanniAidBanner-May13.jpg" alt={headerBannerImage} />
+		<Header image="assets/VanniAidBanner-May13.jpg" alt={headerBannerImage} />
 		<slot />
 		<Footer siteName={siteName} empowermentPeople="Graphics for Good" designPerson="Adarsh Kumar" empowermentLink="https://graphics-for-good.com" designPersonLink="https://graphics-for-good.com/members/adarsh" />
 		<script>
@@ -75,6 +75,6 @@ var headerBannerImage = `${siteName} Banner Image`
 				}
 			})
 		</script>
-		<!-- <script is:inline src="/eruda.js"></script> -->
+		<!-- <script is:inline src="eruda.js"></script> -->
 	</body>
 </html>
